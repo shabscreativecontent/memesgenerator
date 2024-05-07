@@ -1,38 +1,156 @@
+/* *{
+  border: 1px solid red;
+} */
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
 .App {
-  text-align: center;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  background: linear-gradient(0.25turn,#672280, #A626D3);
+  color: #fff;
+  margin: 0;
+  padding: 20px 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav > h1 {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 > i {
+  margin-right: 10px;
+}
+
+.container{
+  max-width: 800px;
+  width: 80%;
+  min-width: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.inputContainer, .inputCard{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.inputContainer{
+  flex-direction: row;
+  gap: 4%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.inputCard{
+  width: 48%;
+}
+
+.inputCard > label{
+  margin-bottom: 5px;
+}
+
+.inputCard > input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.form > input {
+  margin-block: 15px;
+  height: 40px;
+  border-style: none;
+  border-radius: 5px;
+  width: 100%;
+  background: linear-gradient(0.25turn,#672280, #A626D3);
+  color: #fff;
+}
+
+.viewImg img {
+  width: 100%;
+}
+
+
+
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  height: 350px;
+  box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+  -moz-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+}
+
+.card--image {
+  width: 70%;
+  padding: 10%;
+  padding-bottom: 0;
+}
+
+.card--name {
+  margin-block: 13px;
+  color: #333333;
+}
+
+.card--info {
+  padding: 10px;
+}
+
+.card--favorite {
+  width: 25px;
+  cursor: pointer;
+}
+
+.card--contact {
+  font-size: 0.75rem;
+  color: gray;
+  margin-block: 7px;
+}
+
+.image-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.top-text, .bottom-text{
+  text-align: center;
+  position: absolute;
+  text-transform: uppercase;
   color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
 }
 
-.App-link {
-  color: #61dafb;
+.top-text{
+  top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom-text{
+  bottom: 0;
 }
